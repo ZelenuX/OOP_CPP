@@ -97,7 +97,7 @@ class RNA {
 	}
 public:
 	RNA() {}
-	RNA(unsigned int rnaLength) {
+	explicit RNA(unsigned int rnaLength) {
 		allocMem(rnaLength);
 	}
 	RNA(Nucleotide nucleotide, unsigned int rnaLength) : RNA(rnaLength) {
